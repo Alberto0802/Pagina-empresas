@@ -1,0 +1,64 @@
+/* Configuración general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Estilo del menú de navegación */
+nav {
+    background: #004080;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background: #003366;
+    border-radius: 5px;
+}
+
+/* Sección general */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #004080;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #004080;
+    color: white;
+}
