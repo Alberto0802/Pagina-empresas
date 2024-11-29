@@ -1,15 +1,36 @@
 /* Configuración general */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
+html, body {
+    height: 100%;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+header{
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #07b002;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
 
 /* Estilo del menú de navegación */
 nav {
-    background: #004080;
+    background: #058120;
     color: #fff;
     padding: 10px 20px;
     position: sticky;
@@ -36,7 +57,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #003366;
+    background: #11942e;
     border-radius: 5px;
 }
 
@@ -47,18 +68,48 @@ section {
     max-width: 900px;
     background: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 h1, h2 {
     text-align: center;
-    color: #004080;
+    color: #25ca65;
+    font-family: 'Arial Black', sans-serif;
 }
 
-/* Pie de página */
-footer {
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+
+h1, h2 {
     text-align: center;
-    padding: 10px 0;
-    background: #004080;
-    color: white;
+    color: #25ca65;
+}
+
+#inicio {
+    background: linear-gradient(to right, #c8e6c9, #a5d6a7); /* Verde menta */
+
+}
+
+#presentacion {
+    background: linear-gradient(to right, #c8e6c9, #a5d6a7); /* Verde menta */
+
+}
+
+#porque {
+    background: linear-gradient(to right, #c8e6c9, #a5d6a7); /* Verde menta */
+}
+
+#localizacion {
+    background: linear-gradient(to right, #c8e6c9, #a5d6a7); /* Verde menta */
+
 }
