@@ -3,62 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Nombre del Negocio]</title>
+    <title>MasAhorro - Innovando en Ahorros</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Menú de navegación -->
-    <nav>
-        <ul>
+    <!-- Cabecera principal -->
+    <header class="header">
+        <div class="container">
+            <img src="./images/Logo empresa.png" alt="Logo MasAhorro" class="logo">
+            <h1 class="main-title">MasAhorro</h1>
+            <p class="subtitle">Innovamos para que ahorres más, siempre.</p>
+        </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <ul class="nav-list">
             <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#presentacion">Presentación del Promotor</a></li>
+            <li><a href="#presentacion">Presentación</a></li>
             <li><a href="#porque">Por Qué MasAhorro</a></li>
-            <li><a href="#localizacion">Nuestra Localización</a></li>
+            <li><a href="#localizacion">Localización</a></li>
         </ul>
     </nav>
 
-    <header><img src="/Pagina-empresas/images/Logo empresa.png" alt=""></header>
-
-    <main>
+    <!-- Contenido principal -->
+    <main class="main-content">
         <!-- Sección Inicio -->
-        <section id="inicio">
-            <h1>MasAhorro</h1>
+        <section id="inicio" class="section">
+            <h2>Bienvenidos a MasAhorro</h2>
             <p>
-                <strong>Justificación del tipo de letra:</strong> Hemos elegido una fuente moderna, porque refuerza la identidad de nuestro negocio. <br>
-                <strong>Justificación del color:</strong> Los colores verde y blanco reflejan calidad y frescura. <br>
-                <strong>Nombre:</strong> Hemos elegido este nombre porque refleja lo que queremos para nuestros clientes.
+                En MasAhorro, nuestra misión es proporcionar soluciones innovadoras para que nuestros clientes ahorren 
+                tiempo y dinero. Usamos tecnología para comparar precios y ofrecer las mejores opciones para tu bolsillo.
             </p>
         </section>
 
-        <!-- Sección Presentación del Promotor -->
-        <section id="presentacion">
-            <h2>Presentación del Promotor del Proyecto</h2>
-            <p>A continuación, se presenta el C.V. del promotor:</p>
-            <h3>File Not Found</h3>
+        <!-- Sección Presentación -->
+        <section id="presentacion" class="section section-highlight">
+            <h2>Conoce al Promotor</h2>
+            <p>
+                Este proyecto está liderado por un equipo apasionado con experiencia en desarrollo de software y 
+                análisis de mercado. <br> <strong>C.V. no disponible en este momento.</strong>
+            </p>
         </section>
 
         <!-- Sección Por Qué MasAhorro -->
-        <section id="porque">
-            <h2>Por Qué MasAhorro</h2>
-            <p>Breve presentación de la idea de negocio:</p>
+        <section id="porque" class="section">
+            <h2>Por Qué Elegirnos</h2>
             <p>
-                Nuestra idea es que mediante una app que sea fácil de usar nuestros clientes puedan comparar precios del mismo producto en diferentes establecimientos o simplemente otras alternativas que sean de la misma calidad.
+                Nuestra aplicación intuitiva te permite comparar precios de productos en tiempo real, garantizando que 
+                encuentres la mejor calidad al mejor precio. Innovamos para que tu dinero rinda más.
             </p>
         </section>
 
-        <section id="localizacion">
-            <h2>Localizacion de MasAhorro</h2>
-            <p>Actualmente nos ubicamos en Granada en calle Recogidas nº8 2b</p>
+        <!-- Sección Localización -->
+        <section id="localizacion" class="section section-accent">
+            <h2>Encuéntranos</h2>
+            <p>
+                Estamos ubicados en <strong>Calle Recogidas Nº8, 2B, Granada.</strong> Visítanos para más información o
+                comunícate con nuestro equipo.
+            </p>
         </section>
-        
     </main>
 
     <!-- Pie de página -->
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 MasAhorro. Todos los derechos reservados.</p>
+        <a href="#inicio">Volver al inicio</a>
     </footer>
 </body>
-
 </html>
