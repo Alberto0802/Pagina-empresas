@@ -20,21 +20,29 @@
     <!-- Navegación -->
     <nav class="navbar">
         <ul class="nav-list">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#presentacion">Presentación</a></li>
-            <li><a href="#porque">Por Qué MasAhorro</a></li>
-            <li><a href="#localizacion">Localización</a></li>
+            <li><a href="#" class="nav-link" onclick="showSection('inicio')">Inicio</a></li>
+            <li><a href="#" class="nav-link" onclick="showSection('presentacion')">Presentación</a></li>
+            <li><a href="#" class="nav-link" onclick="showSection('porque')">Por Qué MasAhorro</a></li>
+            <li><a href="#" class="nav-link" onclick="showSection('localizacion')">Localización</a></li>
         </ul>
     </nav>
 
     <!-- Contenido principal -->
     <main class="main-content">
         <!-- Sección Inicio -->
-        <section id="inicio" class="section">
+        <section id="inicio" class="section active">
             <h2>Bienvenidos a MasAhorro</h2>
             <p>
-                En MasAhorro, nuestra misión es proporcionar soluciones innovadoras para que nuestros clientes ahorren 
-                tiempo y dinero. Usamos tecnología para comparar precios y ofrecer las mejores opciones para tu bolsillo.
+                <strong>Justificación del Nombre Elegido:</strong><br>
+                MasAhorro refleja claramente la esencia de nuestro negocio: ayudar a nuestros clientes a maximizar su ahorro en tiempo y dinero. Es un nombre directo, fácil de recordar y de pronunciar, que conecta con la motivación principal de nuestro público: aprovechar al máximo sus recursos.
+            </p>
+            <p>
+                <strong>Justificación del Tipo de Letra Elegido:</strong><br>
+                Hemos optado por una tipografía <em>sans-serif moderna y limpia</em>, como Roboto o Open Sans, porque transmite accesibilidad, confianza y modernidad. Estas tipografías son fáciles de leer en dispositivos digitales, lo que facilita la navegación en nuestra página web y mejora la experiencia del usuario.
+            </p>
+            <p>
+                <strong>Justificación del Color Elegido:</strong><br>
+                El color principal será el <span style="color:green;">verde</span>, que simboliza ahorro, estabilidad y crecimiento económico, alineándose con nuestra misión. Este color se complementará con tonos de <span style="color:grey;">blanco</span> para reforzar la limpieza y profesionalismo, y un toque de <span style="color:gold;">amarillo</span> para reflejar optimismo y dinamismo.
             </p>
         </section>
 
@@ -43,17 +51,25 @@
             <h2>Conoce al Promotor</h2>
             <p>
                 Este proyecto está liderado por un equipo apasionado con experiencia en desarrollo de software y 
-                análisis de mercado. <br> <strong>C.V. no disponible en este momento.</strong>
+                análisis de mercado. <br> 
             </p>
+            <div class="embed-container">
+                <embed src="./resources/Alejandro Tantaro - CV.pdf" width="100%" height="600px" type="application/pdf">
+                <embed src="./resources/Currículum Agente comercial foto Simple Blanco.pdf" width="100%" height="600px" type="application/pdf">
+            </div>
         </section>
 
         <!-- Sección Por Qué MasAhorro -->
         <section id="porque" class="section">
-            <h2>Por Qué Elegirnos</h2>
-            <p>
-                Nuestra aplicación intuitiva te permite comparar precios de productos en tiempo real, garantizando que 
-                encuentres la mejor calidad al mejor precio. Innovamos para que tu dinero rinda más.
-            </p>
+            <h1>Presentación de la Idea de Negocio</h1>
+            <p>En <span class="highlight">MasAhorro</span>, estamos revolucionando la forma en que las personas gestionan su economía diaria. Nuestra plataforma ofrece <strong>comparación de precios en tiempo real</strong>, ayudando a los usuarios a encontrar las mejores ofertas sin perder tiempo navegando por múltiples tiendas o servicios.</p>
+            <p>Lo novedoso de nuestro negocio radica en:</p>
+            <ul>
+                <li><strong>Uso de inteligencia artificial:</strong> Analizamos miles de datos para ofrecer recomendaciones personalizadas.</li>
+                <li><strong>Enfoque en el usuario:</strong> Nuestro diseño intuitivo hace que ahorrar sea fácil y accesible para todos.</li>
+                <li><strong>Compromiso con la transparencia:</strong> Mostramos información clara y confiable para que tomes decisiones informadas.</li>
+            </ul>
+            <p>Dirigimos nuestra propuesta a consumidores conscientes que buscan calidad al mejor precio y valoran la comodidad de acceder a todo desde un solo lugar. ¡Con <span class="highlight">MasAhorro</span>, ahorrar nunca fue tan fácil!</p>
         </section>
 
         <!-- Sección Localización -->
@@ -63,13 +79,20 @@
                 Estamos ubicados en <strong>Calle Recogidas Nº8, 2B, Granada.</strong> Visítanos para más información o
                 comunícate con nuestro equipo.
             </p>
+
+            <!-- Mapa de Google incrustado -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.230054121351!2d-3.6010286845502524!3d37.17673227621433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72af7d3d21f7a1%3A0x413b2b385f9de7a9!2sCalle%20Recogidas%20N%C2%BA8%2C%202B%2C%2029001%20Granada!5e0!3m2!1ses!2ses!4v1670427316873!5m2!1ses!2ses" 
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </section>
     </main>
 
     <!-- Pie de página -->
     <footer class="footer">
         <p>&copy; 2024 MasAhorro. Todos los derechos reservados.</p>
-        <a href="#inicio">Volver al inicio</a>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
